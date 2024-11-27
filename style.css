@@ -1,0 +1,104 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Menu Cascata */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+nav ul .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    min-width: 200px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li a:hover {
+    background-color: #555;
+}
+
+/* Conteúdo */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Galeria */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
